@@ -104,13 +104,21 @@ Statement is:", checkEmployeeAppraisalOnce(appraisalValues))
 
 /*6 DOUBT*/
 
-/*7 DOUBT*/
+/*7*/
+const employeeAppraisal0 = qbEmployees.map(employee => Object.assign(employee, {appraisal: 0}))
+const setAppraisal = (employeeList, fname, lname, count) => {
+    employeeList.forEach(employee => {
+        if(employee.first_name == fname && employee.last_name == lname) Object.assign(employee, {appraisal: count})
+    })
+    return employeeList
+}
+console.log("Q-7\n\n", setAppraisal(employeeAppraisal0, "Thomas", "Mathew", 5))
 
 /*8*/
 const employeeListCopy = JSON.parse(JSON.stringify(qbEmployees)), appraisals = []
 for(let employee of employeeListCopy) Object.assign (employee, {appraisal: 3})
 for (let employee of employeeListCopy) appraisals.push(employee.appraisal)
-console.log("Q-5\nStatement: Every employee receive appraisal three times\n\
+console.log("Q-8\nStatement: Every employee receive appraisal three times\n\
 Statement is:", appraisals.every(value => value === 3))
 
 /*9*/

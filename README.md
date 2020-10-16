@@ -11,7 +11,7 @@ All ES6 related assignments
 4. Create a filter function for sort employees by position, by default the filter need to sort employee having role 'Architect' (PENDING)
 5. Create a function for checking whether all the employees got appraisal once.
 6. Create a function for checking whether any of the employees got an appraisal. (PENDING)
-7. Create a function for setting employee appraisal count. By default it should be zero.(PENDING)
+7. Create a function for setting employee appraisal count. By default it should be zero.
 8. Without modifying the existing employee list, set the appraisal count of all employees to 3 and check whether all employees got appraisal 3 times.
 9. Calculate the total count of appraisal provided for all employees.
 10. Create a function for listing employees' age as an array list the number of people in each group (age distribution).
