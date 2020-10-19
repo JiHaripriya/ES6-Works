@@ -33,7 +33,7 @@ All ES6 related assignments
 4. Create an object with group ids as key and an array of team names in it as values.
 5. Filter teams having points higher than or equal to 20 and is in group 1.
 6. Find the name of the team whose id is 4.
-7. Find the team which is in both group 1 & 2 and convert that particular object to array as shown in the example below.
+7. Find the team which is in both group 1 & 2 and convert that particular object to array as shown in the example below:
     {
         name: 'team name',
         id: 0,
@@ -50,7 +50,7 @@ All ES6 related assignments
 9. Reduce 5 points for teams in group 3 into a new array
 10. Print the names of all teams separated by a coma
 11. Check if all teams have points greater than 10
-12. Remove keys “awayJerseyColour” and “captain” and print them as well as the remaining details as an object without mutating.
+12. Remove keys “awayJerseyColour” and “captain” and print them as well as the remaining details as an object without mutating: 
     const manU = 
     {
         name: "Manchester United",

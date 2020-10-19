@@ -87,7 +87,8 @@ const itemList = apparel.map((value) => value.Name)
 console.log("Q-1\n", itemList)
 
 /*2*/
-const {Name:ItemName, Actual_price:Price, ...RestPropertyValue} = apparel.slice(1, 2)[0]
+const [, secondItem, ...rest] = apparel
+const {Name:ItemName, Actual_price:Price, ...RestPropertyValue} = secondItem
 console.log("Q-2\n\n Extracted Name: ",ItemName, "\n Extracted Actual_price: ", Price, 
 "\n Remaining properties:", RestPropertyValue)
 
