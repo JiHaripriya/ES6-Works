@@ -3,8 +3,6 @@ All ES6 related assignments
 
 ## Assignment - 1
 
-### QUESTION SET - 1
-
 1. Create a new array named employees by merging ‘qbTVMEmp’ and ‘qbKocEmp’ using a spread operator.
 2. Iterate through the whole employees list and log the employees full name by creating a function.(Use spread operator, rest parameters, Object destructuring, array.join)
 3. List all employees having role 'Engineer' and age above '25'
@@ -17,7 +15,7 @@ All ES6 related assignments
 10. Create a function for listing employees' age as an array list the number of people in each group (age distribution).
 
 
-### QUESTION SET - 2
+## Assignment - 2
 
 1. Create a list of all items available in the store
 2. Consider the second item in the list. Extract its name and actual_price and move the remaining properties to another variable
