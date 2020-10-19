@@ -29,7 +29,7 @@ All ES6 related assignments
 
 1. Remove the first element of the Teams array using spread operator.
 2. Remove the last element of the Teams array (hint use array slice).
-3. Find total points of all teams
+3. Find total points of all teams.
 4. Create an object with group ids as key and an array of team names in it as values.
 5. Filter teams having points higher than or equal to 20 and is in group 1.
 6. Find the name of the team whose id is 4.
@@ -39,10 +39,7 @@ All ES6 related assignments
         id: 0,
         points: 90,
         group: [3,4,2]
-    }
-
-    to
-
+    } to
     [
         ['name','team name'],
         ['id', 0],
