@@ -94,15 +94,35 @@ console.log(`Q-2\nList of Employees: ${joinFirstLastNames(firstLastNames)}`)
 const positionAgeFilter = employee => employee.age > 25 && employee.position === "Engineer"
 console.log("Q-3\nEngineers above Age 25:\n\n", qbEmployees.filter(positionAgeFilter))
 
-/*4 DOUBT*/
+/*4*/
+const allPositions = new Set(qbEmployees.map(item => {return item.position})), 
+objectCopy = qbEmployees.map(item => { return {...item} })
+
+// Assign priority: for specified (high) and for not specified (same low values)
+const customSortBy = sortParameters => {
+    let positionIndex = {}
+    sortParameters.forEach((parameter, index) => {
+        Object.assign(positionIndex, {[parameter]: index})
+    })
+    for(let otherIndex of allPositions) {
+        if (!sortParameters.includes(otherIndex)) Object.assign(positionIndex, {[otherIndex]: sortParameters.length})
+    }
+    return positionIndex
+}
+const positionPriority = customSortBy(['Architect', 'PM', 'Engineer'])
+const sortedEmployees = objectCopy.sort((a, b) => positionPriority[a.position] - positionPriority[b.position])
+console.log("Q-4\n\n", sortedEmployees)
 
 /*5*/
 const appraisalValues = qbEmployees.map((value) => value.appraisal)
-const checkEmployeeAppraisalOnce = employees => employees.every(value => value >= 1)
-console.log("Q-5\nStatement: Every employee receive appraisal atleast once\n\
-Statement is:", checkEmployeeAppraisalOnce(appraisalValues))
+const checkAllEmployeeAppraisalOnce = employees => employees.every(value => value >= 1)
+console.log("Q-5\nStatement: Every employee received appraisal atleast once\n\
+Statement is:", checkAllEmployeeAppraisalOnce(appraisalValues))
 
-/*6 DOUBT*/
+/*6*/
+const checkAnyEmployeeAppraisalOnce = employees => employees.some(value => value >= 1)
+console.log("Q-6\nStatement: Some employees received appraisal atleast once\n\
+Statement is:", checkAnyEmployeeAppraisalOnce(appraisalValues))
 
 /*7*/
 const employeeAppraisal0 = qbEmployees.map(employee => Object.assign(employee, {appraisal: 0}))
@@ -272,8 +292,8 @@ const setBrandDiscount = (items, brand, discount) => {
         if (item.Brand === brand) {
             Object.assign (item, sellingPriceCalculation(item, discount))
         }
-        else setDefaultDiscount5(item)
-        if (item.Selling_price > 4000) Object.assign (item, sellingPriceCalculation(item, 2)) // 2%
+        else setDefaultDiscount5(item) 
+        if (item.Selling_price > 4000) Object.assign (item, {Selling_price: (item.Selling_price * (1 - 2 / 100)).toFixed(2)}) // 2%
     }
     return items
 }

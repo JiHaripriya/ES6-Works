@@ -8,9 +8,9 @@ All ES6 related assignments
 1. Create a new array named employees by merging ‘qbTVMEmp’ and ‘qbKocEmp’ using a spread operator.
 2. Iterate to the whole employees list and log the employees full name by creating a function.(use spread operator, rest parameters, Object destructuring, array.join  )
 3. List all employees having role 'Engineer' and age above '25'
-4. Create a filter function for sort employees by position, by default the filter need to sort employee having role 'Architect' (PENDING)
+4. Create a filter function for sort employees by position, by default the filter need to sort employee having role 'Architect'
 5. Create a function for checking whether all the employees got appraisal once.
-6. Create a function for checking whether any of the employees got an appraisal. (PENDING)
+6. Create a function for checking whether any of the employees got an appraisal.
 7. Create a function for setting employee appraisal count. By default it should be zero.
 8. Without modifying the existing employee list, set the appraisal count of all employees to 3 and check whether all employees got appraisal 3 times.
 9. Calculate the total count of appraisal provided for all employees.
