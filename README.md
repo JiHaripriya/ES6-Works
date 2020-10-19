@@ -51,17 +51,16 @@ All ES6 related assignments
 10. Print the names of all teams separated by a coma
 11. Check if all teams have points greater than 10
 12. Remove keys “awayJerseyColour” and “captain” and print them as well as the remaining details as an object without mutating.
-
-const manU = 
-{
-    name: "Manchester United",
-    id: 1,
-    group: [“Champions League”, "League Cup"],
-    points: 10,
-    jerseyColour: "red",
-    homeGround: "Old Trafford",
-    awayJerseyColour: "black",
-    captain: "Harry",
-    coach: "OGS",
-}
+    const manU = 
+    {
+        name: "Manchester United",
+        id: 1,
+        group: [“Champions League”, "League Cup"],
+        points: 10,
+        jerseyColour: "red",
+        homeGround: "Old Trafford",
+        awayJerseyColour: "black",
+        captain: "Harry",
+        coach: "OGS",
+    }
 
