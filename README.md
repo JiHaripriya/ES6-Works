@@ -6,7 +6,7 @@ All ES6 related assignments
 ### QUESTION SET - 1
 
 1. Create a new array named employees by merging ‘qbTVMEmp’ and ‘qbKocEmp’ using a spread operator.
-2. Iterate to the whole employees list and log the employees full name by creating a function.(use spread operator, rest parameters, Object destructuring, array.join  )
+2. Iterate through the whole employees list and log the employees full name by creating a function.(Use spread operator, rest parameters, Object destructuring, array.join)
 3. List all employees having role 'Engineer' and age above '25'
 4. Create a filter function for sort employees by position, by default the filter need to sort employee having role 'Architect'
 5. Create a function for checking whether all the employees got appraisal once.

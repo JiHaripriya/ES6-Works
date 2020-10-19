@@ -87,7 +87,7 @@ const itemList = apparel.map((value) => value.Name)
 console.log("Q-1\n", itemList)
 
 /*2*/
-const {Name:ItemName, Actual_price:Price, ...RestPropertyValue} = apparel[1]
+const {Name:ItemName, Actual_price:Price, ...RestPropertyValue} = apparel.slice(1, 2)[0]
 console.log("Q-2\n\n Extracted Name: ",ItemName, "\n Extracted Actual_price: ", Price, 
 "\n Remaining properties:", RestPropertyValue)
 
@@ -104,7 +104,7 @@ console.log("Q-4\n\n", sameBrandElements)
 
 /*5*/
 const productByCategory = apparel.reduce( (groups, item) => {
-    groups[item.Category] = Object.keys(groups).find(key => key == item.Category) ? groups[item.Category]: [];
+    groups[item.Category] = groups[item.Category] || [];
     groups[item.Category].push(item)
     return groups
 }, {} );

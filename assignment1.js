@@ -112,18 +112,22 @@ const sortedEmployees = objectCopy.sort((a, b) => positionPriority[a.position] -
 console.log("Q-4 (GroupBy position listed)\n\n", sortedEmployees)
 
 /* GROUP BY POSITION AND SORT ALPHABETICALLY */
-const sortAndAssign = (groups) => {
+const sortAlphabetically = (groups, sortParameters) => {
+    let nonSortParameters = [], sortedList = {}
+    nonSortParameters = Object.keys(groups).filter(key => !sortParameters.includes(key)).sort()
+    const orderOfPositions = [...sortParameters, ...nonSortParameters]
+    // sort alphabetically by first name within group
     for (let group in groups) groups[group].sort((a, b) => (a.first_name > b.first_name) ? 1 : (a.first_name < b.first_name) ? -1 : 0)
-    return groups
+    orderOfPositions.forEach(key => sortedList[key] = groups[key]) // reordering object into a new object
+    return sortedList
 }
 
 const groupByPosition = qbEmployees.reduce( (groups, item) => {
-    groups[item.position] = Object.keys(groups).find(key => key == item.position) ? groups[item.position]: [];
+    groups[item.position] = groups[item.position] || [];
     groups[item.position].push(item)
     return groups
 }, {} );
-
-console.log("Q-4 (Groupby position and alphabetically)\n", sortAndAssign(groupByPosition))
+console.log("Q-4 (Groupby position and alphabetically)\n\n", sortAlphabetically(groupByPosition, ["Engineer", "Architect"]))
 
 /*5*/
 const appraisalValues = qbEmployees.map((value) => value.appraisal)
@@ -157,7 +161,7 @@ console.log("Q-9\nTotal Appraisal count: ", appraisalValues.reduce((sum, value) 
 
 /*10*/
 const ageGroups = qbEmployees.reduce( (groups, item) => {
-    groups[item.age] = Object.keys(groups).find(key => key == item.age) ? groups[item.age]: [];
+    groups[item.age] = groups[item.age] || [];
     groups[item.age].push(item)
     return groups
 }, {} );
