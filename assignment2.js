@@ -94,9 +94,7 @@ console.log("Q-2\n\n Extracted Name: ",ItemName, "\n Extracted Actual_price: ", 
 
 /*3*/
 const apparelCopy = JSON.parse(JSON.stringify(apparel))
-for(let eachItem of apparelCopy) {
-    Object.assign (eachItem, {Selling_price: (eachItem.Actual_price * (1 - eachItem.Discount / 100)).toFixed(2)})
-}
+for(let eachItem of apparelCopy) eachItem.Selling_price = (eachItem.Actual_price * (1 - eachItem.Discount / 100)).toFixed(2)
 console.log("Q-3\n", apparelCopy)
 
 /*4*/
@@ -113,23 +111,18 @@ console.log("Q-5\n\n", productByCategory)
 
 /*6*/
 const apparelItems = JSON.parse(JSON.stringify(apparel))
-
-const sellingPriceCalculation = (item, discount) => {
-    return {Selling_price: (item.Actual_price * (1 - discount / 100)).toFixed(2)}
-}
-
+const sellingPriceCalculation = (item, property, discount) => ({Selling_price: (item[property] * (1 - discount / 100)).toFixed(2)})
 // Sets all products discount value to 5%
 const setDefaultDiscount5 = (item) => { 
-    Object.assign(item, {Discount: 5}, sellingPriceCalculation(item, 5))
+    Object.assign(item, {Discount: 5}, sellingPriceCalculation(item, "Actual_price", 5))
     return item
 }
-
 const setBrandDiscount = (items, brand, discount) => {
     for (let item of items) {
-        if (item.Brand === brand) Object.assign (item, sellingPriceCalculation(item, discount))
+        if (item.Brand === brand) Object.assign (item, sellingPriceCalculation(item, "Actual_price", discount))
         else setDefaultDiscount5(item) 
-        // Adds additonal 2% discount
-        if (item.Selling_price > 4000) Object.assign (item, {Selling_price: (item.Selling_price * (1 - 2 / 100)).toFixed(2)}) 
+        // Adds additonal 2% discount sellingPriceCalculation(item, "Selling_price", discount))
+        if (item.Selling_price > 4000) Object.assign (item, sellingPriceCalculation(item, "Selling_price", 2)) 
     }
     return items
 }
