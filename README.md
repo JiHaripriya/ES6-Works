@@ -81,7 +81,7 @@ const students = [<br/>
 { name: "D", age: 18, college: "UVCE",stream:'CSE',currentYear:3 },<br/>
 { name: "E", age: 22, college: "KEAM",stream:'AEI',currentYear:4 },<br/>
 { name: "F", age: 21, college: "NETE",stream:'EEE',currentYear:3 }<br/>
-]
+]<br/>
     a. There is election voting for the post of Chairperson, for which only final year students are eligible. Create a list satisfying the above condition.<br/>
     b. The student B seems to have the wrong college name in the above data. Return an above array with the college name replaced as “NETE”<br/>
     c. Find the total number of students that would be eligible for placements this year.<br/>
@@ -94,25 +94,24 @@ const arr1 = [<br/>
 {key : "2" , value: "def"}, <br/>
 {key : "3" , value: "ghi"}, <br/>
 {key : "4" , value: "jkl"}<br/>
-];
+];<br/>
     a. Return a reserved array with only the value for key 3 altered with value : “xyz”, maintaining the remaining key value pairs<br/>
     b. Return an array containing only the values and append them to form a single word<br/>
     c. From the above the obtained single word, extract the exact middle letter<br/>
 
-4.Combine the below two objects and create an array with only the object keys. <br/>
+4. Combine the below two objects and create an array with only the object keys. <br/>
     const obj1 = {a: 1 , b: 2} <br/>
     const obj2 = {c:3, d:4 , e:5}<br/>
 
-5.
-let Obj ={<br/>
-name:"ABC",<br/>
-email:"abc@gmail.com",<br/>
-age:25,<br/>
-address:{
-    city:"Tvpm",
-    state:"Kerala",
-    pinCode:12345
-}<br/>
-}<br/>
+5. let Obj ={<br/>
+    name:"ABC",<br/>
+    email:"abc@gmail.com",<br/>
+    age:25,<br/>
+    address:{
+        city:"Tvpm",
+        state:"Kerala",
+        pinCode:12345
+    }<br/>
+    }<br/>
     a. From the above, console the address values(using destructuring)<br/>
     b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555<br/>
