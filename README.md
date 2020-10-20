@@ -66,53 +66,53 @@ All ES6 related assignments
 
 ## Assignment - 4
 
-1. Consider the below array
-const  array = [1,2,3,1,4,10, 15, 16, 5, 12, 18, 19, 2, 20]
-> a. Create a new array returning with multiples of 2, sorted in descending order and for every alternate multiple replace with a alphabet limited to 3 starting from “abc”, “def” [eg: [2,”ABC”,10, “DEF”.....]
-> b. What are all the possible the ways to empty the above array
-> c. The above array includes many repeating values, remove them using any ES6 method
-> d. Iterate the above array without mutating to check if the value 3 exist 
+1. Consider the below array<br/>
+const  array = [1,2,3,1,4,10, 15, 16, 5, 12, 18, 19, 2, 20]<br/>
+> a. Create a new array returning with multiples of 2, sorted in descending order and for every alternate multiple replace with a alphabet limited to 3 starting from “abc”, “def” [eg: [2,”ABC”,10, “DEF”.....]<br/>
+> b. What are all the possible the ways to empty the above array<br/>
+> c. The above array includes many repeating values, remove them using any ES6 method<br/>
+> d. Iterate the above array without mutating to check if the value 3 exist <br/>
 
 2. Analyse the below data representing the college students information <br/>
-const students = [
-{ name: "A", age: 17, college: "UVCE",stream:'CSE',currentYear:1 },
-{ name: "B", age: 19, college: "KEAM",stream:'ECE',currentYear:2 },
-{ name: "C", age: 23, college: "UVCE",stream:'EEE',currentYear:4 },
-{ name: "D", age: 18, college: "UVCE",stream:'CSE',currentYear:3 },
-{ name: "E", age: 22, college: "KEAM",stream:'AEI',currentYear:4 },
-{ name: "F", age: 21, college: "NETE",stream:'EEE',currentYear:3 }
+const students = [<br/>
+{ name: "A", age: 17, college: "UVCE",stream:'CSE',currentYear:1 },<br/>
+{ name: "B", age: 19, college: "KEAM",stream:'ECE',currentYear:2 },<br/>
+{ name: "C", age: 23, college: "UVCE",stream:'EEE',currentYear:4 },<br/>
+{ name: "D", age: 18, college: "UVCE",stream:'CSE',currentYear:3 },<br/>
+{ name: "E", age: 22, college: "KEAM",stream:'AEI',currentYear:4 },<br/>
+{ name: "F", age: 21, college: "NETE",stream:'EEE',currentYear:3 }<br/>
 ]
-> a. There is election voting for the post of Chairperson, for which only final year students are eligible. Create a list satisfying the above condition.
-> b. The student B seems to have the wrong college name in the above data. Return an above array with the college name replaced as “NETE”
-> c. Find the total number of students that would be eligible for placements this year.
-> d. Create an array with students with stream ‘EEE” and in the order of their currentYear
-> e. Create a new array for the students above the age of 21, add a new property ‘cgpa’ 
+> a. There is election voting for the post of Chairperson, for which only final year students are eligible. Create a list satisfying the above condition.<br/>
+> b. The student B seems to have the wrong college name in the above data. Return an above array with the college name replaced as “NETE”<br/>
+> c. Find the total number of students that would be eligible for placements this year.<br/>
+> d. Create an array with students with stream ‘EEE” and in the order of their currentYear<br/>
+> e. Create a new array for the students above the age of 21, add a new property ‘cgpa’ <br/>
 
 3. Analyse the below data <br/>
-const arr1 = [
-{key : "1" , value: "abc"}, 
-{key : "2" , value: "def"}, 
-{key : "3" , value: "ghi"}, 
-{key : "4" , value: "jkl"}
+const arr1 = [<br/>
+{key : "1" , value: "abc"}, <br/>
+{key : "2" , value: "def"}, <br/>
+{key : "3" , value: "ghi"}, <br/>
+{key : "4" , value: "jkl"}<br/>
 ];
-> a. Return an reserved array with only the value for key 3 altered with value : “xyz”, maintaining the remaining key value pairs
-> b. Return an array containing only the values and append them to form a single word
-> c. From the above the obtained single word, extract the exact middle letter
+> a. Return an reserved array with only the value for key 3 altered with value : “xyz”, maintaining the remaining key value pairs<br/>
+> b. Return an array containing only the values and append them to form a single word<br/>
+> c. From the above the obtained single word, extract the exact middle letter<br/>
 
 4.Combine the below two objects and create an array with only the object keys. <br/>
-const obj1 = {a: 1 , b: 2} 
-const obj2 = {c:3, d:4 , e:5}
+const obj1 = {a: 1 , b: 2} <br/>
+const obj2 = {c:3, d:4 , e:5}<br/>
 
 5.
 let Obj ={<br/>
-name:"ABC",
-email:"abc@gmail.com",
+name:"ABC",<br/>
+email:"abc@gmail.com",<br/>
 age:25,<br/>
-address:{
-    city:"Tvpm",
-    state:"Kerala",
-    pinCode:12345
+address:{<br/>
+    city:"Tvpm",<br/>
+    state:"Kerala",<br/>
+    pinCode:12345<br/>
 }<br/>
-}
-> a. From the above, console the address values(using destructuring)
-> b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555
+}<br/>
+> a. From the above, console the address values(using destructuring)<br/>
+> b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555<br/>
