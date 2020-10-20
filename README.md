@@ -113,5 +113,5 @@ const arr1 = [<br/>
         pinCode:12345
     }<br/>
     }<br/>
-    a. From the above, console the address values(using destructuring)<br/>
+    a. From the above, console the address values (using destructuring)<br/>
     b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555<br/>

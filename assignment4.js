@@ -126,10 +126,10 @@ const extractMiddleLetter = (string) => {
 }
 extractMiddleLetter(arr1.map(item => item.value).join(""))
 
+/* ========================================================================================================================================== */
+
 const obj1 = {a: 1 , b: 2} 
 const obj2 = {c:3, d:4 , e:5}
-
-/* ========================================================================================================================================== */
 
 //4. Combine the below two objects and create an array with only the object keys
 const combinedObjects = {...obj1, ...obj2}
