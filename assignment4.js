@@ -1,6 +1,7 @@
 const arrayQ1 = [1, 2, 3, 1, 4, 10, 15, 16, 5, 12, 18, 19, 2, 20]
 
-// 1. a. Create a new array returning with multiples of 2, sorted in descending order and for every alternate multiple replace with a alphabet limited to 3 starting from “abc”, “def” [eg: [2,”ABC”,10, “DEF”.....]
+/* 1. a. Create a new array returning with multiples of 2, sorted in descending order and for every alternate multiple replace with a alphabet
+limited to 3 starting from “abc”, “def” [eg: [2,”ABC”,10, “DEF”.....] */
 
 // Generate alphabet string
 const alphabets = Array.from({length: (26)}, (_, index) => index + 65)
