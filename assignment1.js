@@ -100,10 +100,10 @@ objectCopy = qbEmployees.map(item => { return {...item} })
 // Assign priority to sort parameters specified
 const customSortBy = sortParameters => {
     let positionIndex = {}
-    sortParameters.forEach((parameter, index) => Object.assign(positionIndex, {[parameter]: index}))
+    sortParameters.forEach((parameter, index) => positionIndex[parameter] = index) 
     // For the unsepcified positions, give same priority value
     for(let otherIndex of allPositions) {
-        if (!sortParameters.includes(otherIndex)) Object.assign(positionIndex, {[otherIndex]: sortParameters.length})
+        if (!sortParameters.includes(otherIndex)) positionIndex[otherIndex] = sortParameters.length
     }
     return positionIndex
 }
@@ -131,20 +131,18 @@ console.log("Q-4 (Groupby position and alphabetically)\n\n", sortAlphabetically(
 
 /*5*/
 const appraisalValues = qbEmployees.map((value) => value.appraisal)
-const checkAllEmployeeAppraisal = employees => employees.every(value => value >= 1)
 console.log("Q-5\nStatement: Every employee received appraisal atleast once\n\
-Statement is:", checkAllEmployeeAppraisal(appraisalValues))
+Statement is:", appraisalValues.every(value => value >= 1))
 
 /*6*/
-const checkAnyEmployeeAppraisal = employees => employees.some(value => value >= 1)
 console.log("Q-6\nStatement: Some employees received appraisal atleast once\n\
-Statement is:", checkAnyEmployeeAppraisal(appraisalValues))
+Statement is:", appraisalValues.some(value => value >= 1))
 
 /*7*/
 const employeeAppraisal0 = qbEmployees.map(employee => Object.assign({...employee}, {appraisal: 0}))
 const setAppraisal = (employeeList, fname, lname, count) => {
     employeeList.forEach(employee => {
-        if(employee.first_name == fname && employee.last_name == lname) Object.assign(employee, {appraisal: count})
+        if(employee.first_name == fname && employee.last_name == lname) employee.appraisal = count
     })
     return employeeList
 }
