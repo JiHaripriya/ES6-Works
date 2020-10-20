@@ -64,7 +64,6 @@ console.log("Method 3: ", arrayQ1.filter((value, index) => arrayQ1.indexOf(value
 // Method 4: Reduce parameter accumulator
 console.log("Method 4: ", arrayQ1.reduce((prev, value) => prev.includes(value) ? prev : [...prev, value], []))
 
-
 //1. d. Iterate the above array without mutating to check if the value 3 exist 
 
 // Method 1
@@ -72,6 +71,8 @@ console.log("Method 1: ", arrayQ1.includes(3) == true ? "Value 3 Exists" : "Valu
 
 // Method 2
 console.log("Method 2: ", arrayQ1.filter(value => value == 3).length >= 1 ? "Value 3 Exists" : "Value 3 doesnot exist")
+
+/* ========================================================================================================================================== */
 
 const students = [
     { name: "A", age: 17, college: "UVCE",stream:'CSE',currentYear:1 },
@@ -81,6 +82,7 @@ const students = [
     { name: "E", age: 22, college: "KEAM",stream:'AEI',currentYear:4 },
     { name: "F", age: 21, college: "NETE",stream:'EEE',currentYear:3 }
 ]
+
 // 2. a. There is election voting for the post of Chairperson, for which only final year students are eligible. Create a list satisfying the above condition.
 console.log(students.filter(student => student.currentYear == 4).map(value => value.name))
 
@@ -96,6 +98,8 @@ console.log(students.filter(student => student.stream == 'EEE').sort((a, b) => a
 
 //2. e. Create a new array for the students above the age of 21, add a new property ‘cgpa’ 
 console.log(students.filter(student => student.age >= 21).map(value => Object.assign(value, {cgpa: []})))
+
+/* ========================================================================================================================================== */
 
 const arr1 = [
     {key : "1" , value: "abc"}, 
@@ -124,9 +128,13 @@ extractMiddleLetter(arr1.map(item => item.value).join(""))
 const obj1 = {a: 1 , b: 2} 
 const obj2 = {c:3, d:4 , e:5}
 
+/* ========================================================================================================================================== */
+
 //4. Combine the below two objects and create an array with only the object keys
 const combinedObjects = {...obj1, ...obj2}
 console.log(Object.keys(combinedObjects))
+
+/* ========================================================================================================================================== */
 
 let Obj ={
     name:"ABC",
@@ -147,4 +155,3 @@ console.log(address)
 // To avoid adding new property --> seal or preventExtension can be used
 Object.seal(Obj).address.pinCode = 55555
 console.log(Obj)
-
