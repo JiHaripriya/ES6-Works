@@ -107,7 +107,7 @@ const arr1 = [
     {key : "2" , value: "def"}, 
     {key : "3" , value: "ghi"}, 
     {key : "4" , value: "jkl"}
-    ];
+];
 
 //3. a. Return an reserved array with only the value for key 3 altered with value : “xyz”, maintaining the remaining key value pairs
 const result = arr1.map(arrValue => {
