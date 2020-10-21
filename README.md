@@ -115,3 +115,81 @@ const arr1 = [<br/>
     }<br/>
     a. From the above, console the address values (using destructuring)<br/>
     b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555<br/>
+
+## Assignment - 5
+
+I. Data for some of the matches played in 2018 FIFA World Cup 2018 is gievn. Find solution for the following queries using ES6 Methods:
+
+#### Array Operations
+
+1. The match details for semi final -1 appears to be missing from the data. Add new match detail into the matches array without mutating the original Array ( set Id number as 4).
+2. Create a new variable and sort the matches array based on the Id property. 
+3. Check whether the matches array contains only knockout matches and save the result to a new variable.
+4. Create a new variable from the sample data which contains only the details of knockout matches. 
+5. Create a new variable finalData and return only the details of the Final Match.
+6. Create a new Variable and return only the stadium names as a list. 
+
+#### Object Operations
+1. From the already created finalData variable, use ES6 object destructuring to create variables that return details of team1 and team2.
+2. Update the finalData variable and update the stadium property to { key: “Moscow”, name: “Moscow Stadium” }. 
+
+II. Data for sample employee list of the company is gievn. Find solution for the following queries using ES6 Methods:
+
+1. Create an array with employees who have above 30 years old and experience above 5 years.
+2. Create an array with employees other than CSS technology.
+3. Employees from CALICUT who have above 5 years of experience are eligible for bonuses. Create a list satisfying the above condition.
+4. Find the total age of employees working in REACT technology.
+5. Employee A1 got a transfer from CALICUT to TVM. Update the existing array with the new place of A1.
+
+## Assignment - 6
+
+1. Remove duplicates of the array and return an array of only unique elements <br>
+const array = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8];
+2. Find the intersection of two arrays.  (An intersection would be the common elements that exist within both arrays). The elements should be unique!<br>
+const firstArray = [2, 2, 4, 1];<br>
+const secondArray = [1, 2, 0, 2];
+3. Remove empty values from the array.<br>
+const array = [0, 1, null, 2, "", 3, undefined, 3,,,,,, 4,, 4,, 5,, 6,,,,]
+4. Write a JavaScript program to display whether the player is retired  (i.e. display player name, nationality and playing status) of the following players.<br>
+const cricket = [{<br>
+name: 'Sachin Tendulkar',<br>
+nationality: 'India',<br>
+retired: true<br>
+}, {<br>
+name: 'Shane Warne',<br>
+nationality: 'Australia',<br>
+retired: true<br>
+}, {<br>
+name: 'Virat Kohli',<br>
+nationality: 'India',<br>
+retired: false<br>
+}];
+5. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array<br>
+Test Data :<br>
+console.log(first([7, 9, 0, -2]));<br>
+console.log(first([],3));<br>
+console.log(first([7, 9, 0, -2],3));<br>
+console.log(first([7, 9, 0, -2],6));<br>
+console.log(first([7, 9, 0, -2],-3));<br>
+Expected Output :<br>
+7<br>
+[]<br>
+[7, 9, 0]<br>
+[7, 9, 0, -2]<br>
+[]<br>
+6. Write a function to find whether an element is present in an array or not
+7. Remove last element of an array (not using slice)<br>
+Const array = [1, 2, 3]
+8. Check If at Least one Array Element is greater than 5
+9. Copy the object obj1 and create a new object obj2 and add a new property completed : false, without changing the original object<br>
+const obj1 = {<br>
+'testable': true,<br>
+'removable': false,<br>
+'printable': false,<br>
+'changeable': true<br>
+}
+10. Write a function to remove nth element of an array
+11. Remove first 2 elements from an array using spread operator<br>
+Const array = [10, 20, 30, 40, 50, 60, 70]
+12. Replace first and second element with 5 and 6 using splice<br>
+const array = [1,2,3,4,5]
