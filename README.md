@@ -115,3 +115,28 @@ const arr1 = [<br/>
     }<br/>
     a. From the above, console the address values (using destructuring)<br/>
     b. Write a function that prevent the above object from adding new properties but change its pinCode to 55555<br/>
+
+## Assignment - 5
+
+I. Data for some of the matches played in 2018 FIFA World Cup 2018 is gievn. Find solution for the following queries using ES6 Methods:
+
+#### Array Operations
+
+1. The match details for semi final -1 appears to be missing from the data. Add new match detail into the matches array without mutating the original Array ( set Id number as 4).
+2. Create a new variable and sort the matches array based on the Id property. 
+3. Check whether the matches array contains only knockout matches and save the result to a new variable.
+4. Create a new variable from the sample data which contains only the details of knockout matches. 
+5. Create a new variable finalData and return only the details of the Final Match.
+6. Create a new Variable and return only the stadium names as a list. 
+
+#### Object Operations
+1. From the already created finalData variable, use ES6 object destructuring to create variables that return details of team1 and team2.
+2. Update the finalData variable and update the stadium property to { key: “Moscow”, name: “Moscow Stadium” }. 
+
+II. Data for sample employee list of the company is gievn. Find solution for the following queries using ES6 Methods:
+
+1. Create an array with employees who have above 30 years old and experience above 5 years.
+2. Create an array with employees other than CSS technology.
+3. Employees from CALICUT who have above 5 years of experience are eligible for bonuses. Create a list satisfying the above condition.
+4. Find the total age of employees working in REACT technology.
+5. Employee A1 got a transfer from CALICUT to TVM. Update the existing array with the new place of A1.
