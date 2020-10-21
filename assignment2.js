@@ -89,7 +89,7 @@ console.log("Q-1\n", itemList)
 /*2*/
 const [, secondItem, ...rest] = apparel
 const {Name:ItemName, Actual_price:Price, ...RestPropertyValue} = secondItem
-console.log("Q-2\n\n Extracted Name: ",ItemName, "\n Extracted Actual_price: ", Price, 
+console.log("Q-2\n\n Extracted Name: ", ItemName, "\n Extracted Actual_price: ", Price, 
 "\n Remaining properties:", RestPropertyValue)
 
 /*3*/

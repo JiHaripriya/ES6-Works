@@ -190,6 +190,6 @@ const obj1 = {<br>
 }
 10. Write a function to remove nth element of an array
 11. Remove first 2 elements from an array using spread operator<br>
-	Const array = [10, 20, 30, 40, 50, 60, 70]
+Const array = [10, 20, 30, 40, 50, 60, 70]
 12. Replace first and second element with 5 and 6 using splice<br>
 const array = [1,2,3,4,5]

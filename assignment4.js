@@ -55,7 +55,6 @@ console.log("Method 1: ", uniqueValueMethod1)
 //Method 2: Using map and includes
 arrayQ1.map(value => {
     if (!uniqueValueMethod2.includes(value)) uniqueValueMethod2.push(value)
-    return uniqueValueMethod2
 })
 console.log("Method 2: ", uniqueValueMethod2)
 
@@ -137,11 +136,11 @@ console.log(Object.keys(combinedObjects))
 
 /* ========================================================================================================================================== */
 
-let Obj ={
+let Obj = {
     name:"ABC",
     email:"abc@gmail.com",
     age:25,
-    address:{
+    address: {
         city:"Tvpm",
         state:"Kerala",
         pinCode:12345
