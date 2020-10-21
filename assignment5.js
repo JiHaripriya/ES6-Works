@@ -93,7 +93,9 @@ let sampleData = {
 * Array Operations *
 *********************/
 
-//The match details for semi final -1 appears to be missing from the data. Add new match detail into the matches array without mutating the original Array ( set Id number as 4)
+//The match details for semi final -1 appears to be missing from the data. Add new match detail into the matches array without mutating 
+//the original Array ( set Id number as 4)
+
 const semiFinal1 =  {
 	Id: 4,
     match: 'semi-final-1',
